@@ -25,5 +25,11 @@ public class MyClass {
         {
             System.out.println(itr.next());
         }
+        
+        Enumeration e = Collections.enumeration(list);  // Enumeration
+        while(e.hasMoreElements())
+        {
+            System.out.print(e.nextElement()+" ");
+        }
     }
 }
