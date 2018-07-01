@@ -13,7 +13,11 @@ public class MyClass {
             list1.trimToSize();
         System.out.println(list1);
             list1.add(23);
+        System.out.println(list1); 
+        list1.set(4,23);
         System.out.println(list1);    
+        
+        list1.ensureCapacity(50);
         
     }
 }
