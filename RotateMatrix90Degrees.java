@@ -9,7 +9,7 @@ public class MyClass {
     {
         for(int i=0;i<a.length;i++)
         {
-            for(int j=0;j<a.length;j++)
+            for(int j=i;j<a.length;j++)
             {
                 int t = a[j][i];
                 a[j][i] = a[i][j];
@@ -19,9 +19,9 @@ public class MyClass {
     }
     static void reverseCols(int a[][])
     {
-        for(int i=0;i<a[0].length;i++)
+        for(int i=0;i<a.length;i++)
         {
-            for(int j=0,k=a[0].length-1;j<k;j++,k--)
+            for(int j=0,k=a.length-1;j<k;j++,k--)
             {
                 int  t = a[j][i];
                 a[j][i] = a[k][i];
@@ -33,7 +33,7 @@ public class MyClass {
     {
         for(int i=0;i<a.length;i++)
         {
-            for(int j=0;j<a[0].length;j++)
+            for(int j=0;j<a.length;j++)
             {
                 System.out.print(a[i][j]+" ");
             }
